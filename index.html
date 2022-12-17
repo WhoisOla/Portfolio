@@ -18,9 +18,20 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="img/favlogo.avif" type="image/x-icon" />
+     <script>
+ function disableClick(){
+ document.onclick=function(event){
+ if (event.button == 2) {
+ alert('Right Click Message');
+ return false;
+ }
+ }
+ </script>
+    
   </head>
-  <body>
+  <body onLoad="disableClick()">
     <!----header design--->
+    
     <header>
       <a href="#"><img class="logo" src="img/Logo.avif" alt="Logo" /></a>
 
