@@ -549,26 +549,10 @@ form textarea {
   justify-content: center;
 }
 
-.typing-demo{
-  width: 35ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-  color: #f2f2f2
+body{
+  background: #222;
 }
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
